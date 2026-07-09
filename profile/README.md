@@ -1,41 +1,58 @@
-# APPS CM
+# OKALM HQ
 
-APPS CM is a Cameroon-based software organization building practical, high-quality digital products for Africa and the world.
+OKALM HQ is a Cameroon-based software organization building practical, high-quality digital products for Africa and the world.
+
+We design, ship, and operate mobile apps, web platforms, and backend systems with a focus on reliability, clarity, and long-term maintainability.
 
 ## What We Build
 
-- Mobile applications
-- Web platforms
-- Backend systems and internal tools
-- Reusable product foundations for faster delivery across multiple ventures
+- Mobile applications with Expo / React Native
+- Web portals and marketing surfaces with modern frontend stacks
+- Backend APIs, admin tools, and operational dashboards
+- Release automation, documentation, and product infrastructure
 
-## Current Focus
+## Petit Market
 
-### Petit Market
+Our flagship marketplace platform is split into focused repositories:
 
-Petit Market is a marketplace platform developed across dedicated repositories:
+| Repository | Role |
+| --- | --- |
+| [petit-market-mobile](https://github.com/APPS-CM/petit-market-mobile) | Production mobile app (iOS & Android) |
+| [petit-market-mobile-test](https://github.com/APPS-CM/petit-market-mobile-test) | Test consumer app wired to the shared base package |
+| [petit-market-web](https://github.com/APPS-CM/petit-market-web) | Public web portal |
+| [petit-market-backend](https://github.com/APPS-CM/petit-market-backend) | PocketBase API, schema, and admin tools |
+| [mobile-marketplace-base](https://github.com/APPS-CM/mobile-marketplace-base) | Shared mobile marketplace package |
 
-- [`petit-market-mobile`](https://github.com/APPS-CM/petit-market-mobile) - Expo / React Native mobile app
-- [`petit-market-web`](https://github.com/APPS-CM/petit-market-web) - public web portal
-- [`petit-market-backend`](https://github.com/APPS-CM/petit-market-backend) - PocketBase API and admin tools
+## All Repositories
 
-### Product Foundations
+| Repository | Description |
+| --- | --- |
+| [petit-market-mobile](https://github.com/APPS-CM/petit-market-mobile) | Mobile app for Petit Market |
+| [petit-market-mobile-test](https://github.com/APPS-CM/petit-market-mobile-test) | Test mobile app consuming `mobile-marketplace-base` |
+| [petit-market-web](https://github.com/APPS-CM/petit-market-web) | Web app for Petit Market |
+| [petit-market-backend](https://github.com/APPS-CM/petit-market-backend) | Backend services, PocketBase schema, Docker assets, and internal tools |
+| [mobile-marketplace-base](https://github.com/APPS-CM/mobile-marketplace-base) | Reusable mobile marketplace base package |
+| [agra-mobile](https://github.com/APPS-CM/agra-mobile) | Private Agra mobile application |
+| [sample-repo](https://github.com/APPS-CM/sample-repo) | Sample repository |
+| [.github](https://github.com/APPS-CM/.github) | Organization profile and shared community files |
 
-We are also building reusable internal foundations to accelerate future launches:
-
-- [`mobile-marketplace-base`](https://github.com/APPS-CM/mobile-marketplace-base) - reusable mobile marketplace base
-- [`agra-mobile`](https://github.com/APPS-CM/agra-mobile) - private Agra mobile application repository
+Most repositories are private. If you have access to the organization, they appear in the [repositories tab](https://github.com/orgs/APPS-CM/repositories) as well.
 
 ## How We Work
 
-- We split products into focused repositories by platform or responsibility
-- We keep shipping infrastructure, release automation, and documentation close to the code
-- We invest in reusable foundations when patterns prove stable across products
-- We prefer practical software that can be operated, maintained, and improved over time
+- One repository per platform or responsibility
+- `dev` → `beta` → `main` branch flow for active products
+- Versioning with `VERSION`, `CHANGELOG.md`, and release automation
+- Documentation and operational checklists live next to the code
+- Shared logic is extracted only when it is stable enough to reuse
 
-## Organization Notes
+## Tech Stack
 
-- Some repositories are private and are not visible publicly
-- Public-facing profile information lives in this special `.github` organization repository
+- **Mobile:** Expo, React Native, TypeScript, Zustand, EAS
+- **Web:** Astro, React, TypeScript
+- **Backend:** PocketBase, Go, Docker
+- **Infra:** GitHub Actions, Coolify, AWS S3
 
-For collaboration or product discussions, use the relevant repository issues and pull requests where access is available.
+## Contact & Collaboration
+
+Use repository issues and pull requests for product work. For access to private repositories, contact an organization owner.
